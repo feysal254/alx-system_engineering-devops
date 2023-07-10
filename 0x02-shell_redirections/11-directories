@@ -1,0 +1,3 @@
+#!/bin/bash
+dir_count=$(find.-type d -name'*'-O-name'*'-prune| wc -l)
+echo"$dir_count"

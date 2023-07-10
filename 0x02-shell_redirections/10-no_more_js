@@ -1,0 +1,5 @@
+#!/bin/bash
+**/*.js
+if[-f $file]
+rm $file
+fi

@@ -1,0 +1,6 @@
+#!/bin/bash
+file=$(ls -t)
+count=0
+if[[$count -ge 10]]
+echo"$file((count++))"
+

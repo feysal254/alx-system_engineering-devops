@@ -1,0 +1,4 @@
+#!/bin/bash
+echo"Last 10 lines of /etc/passwd:"
+tail -10/etc/passwd
+

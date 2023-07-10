@@ -1,0 +1,5 @@
+#!/bin/bash
+FILE=/etc/passwd
+echo"Displaying lines containing the root pattern"
+grep -A3 root$FILE
+echo"Done"

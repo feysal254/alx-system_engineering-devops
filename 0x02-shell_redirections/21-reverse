@@ -1,0 +1,6 @@
+#!/bin/bash
+echo"provide a text"
+read-r user_input
+rev_user_input=$(echo "$user_input"|rev)
+echo"$rev_user_input"
+
