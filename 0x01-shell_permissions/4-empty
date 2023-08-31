@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "empty file 'hello' created"
+touch hello.txt
