@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod u-rwx g-rwx o+rwx hello
+File_PATH='./hello" chmod 000 $FILE_PATH chmod 000 $FILE_PATH chmod 777 $FILE_PATH
