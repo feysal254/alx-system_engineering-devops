@@ -1,5 +1,2 @@
 #!/bin/bash
-$(ls-d*/);
-chmod u+x "$directory"
-chmod g+x "$directory"
-chmod o+x "$directory"
+$(ls-d*/) chmod u+x "$directory" chmod g+x "$directory" chmod o+x "$directory"
