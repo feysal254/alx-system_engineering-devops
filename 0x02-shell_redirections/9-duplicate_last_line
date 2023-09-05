@@ -1,3 +1,2 @@
 #!/bin/bash
-lines=file.readlines() print(lines[-1]+lines[-1])
-
+tail -n 1 iacta >> iacta
