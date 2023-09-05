@@ -1,9 +1,2 @@
 #!/bin/bash
-echo Local Variables
-declare -p | grep -E '^declare \-x [\w_]+'
-echo 
-echo Environment Variables
-declare -p | grep -E '^declare \-x [\w_]+'
-echo
-echo Functions
-declare -F  | awk '{print $3}'
+set
