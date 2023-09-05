@@ -1,2 +1,2 @@
 #!/bin/bash
-for i in $(env);do echo "$i"
+printenvr
