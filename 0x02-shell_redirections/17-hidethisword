@@ -1,6 +1,2 @@
 #!/bin/bash
-$(cat /etc/passwd)
-if[[! $line=~"bin"]]
-echo"$line"
-fi
-
+grep -v "bin" /etc/passwd

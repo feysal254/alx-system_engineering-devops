@@ -1,6 +1,2 @@
 #!/bin/bash
-echo"enter text"
-read TEXT
-echo"Original text:$TEXT"
-echo"Replaced text: $(echo $TEXT|tr'ac''Zw')"
-
+tr 'A' 'Z' | tr 'c' 'e'

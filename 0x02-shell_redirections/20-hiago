@@ -1,7 +1,2 @@
 #!/bin/bash
-read -p"enter a string:"str
-temp=$(mktemp)
-echo"${str//[cC]/}">$temp
-vi -c"%s/\S\+/$(cat$temp)/glx"
-rm $temp
-
+tr -d 'cC'

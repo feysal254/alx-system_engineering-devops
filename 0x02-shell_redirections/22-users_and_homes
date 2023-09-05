@@ -1,7 +1,2 @@
 #!/bin/bash
-usersAndDirs='awk-F':'{print $1""$6}'/etc/passwd'
-echo"Users and their home directories:"
-echo""
-echo"$usersAndDirs"| awk '{print $1" "$2}'|sort
-echo""
-
+cut -d : -f 1,6 /etc/passwd | sort -d
