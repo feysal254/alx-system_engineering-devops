@@ -1,12 +1,20 @@
 #!/usr/bin/python3
 """
-0-main
+queries the Reddit API and returns the number of subscribers(not active
+users, total subscribers) for a given subreddit. if an invalid subreddit
+is given, the function should return 0.
 """
-import sys
+import requests
 
-if __name__ == '__main__':
-    number_of_subscribers = __import__('0-subs').number_of_subscribers
-    if len(sys.argv) < 2:
-        print("Please pass an argument for the subreddit to search.")
-    else:
-        print("{:d}".format(number_of_subscribers(sys.argv[1])))
+
+def number_of_subscribers(subreddit):
+    """queries the Reddit API"""
+    headers = {
+        "User-Agent": "0x16. API_advanced-e_kiminza"
+        }
+    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
+    response = requests.get(url, headers=headers, allow_redirects=False)
+    if response.status_code != 200:
+        return 0
+    sub = response.json().get("data").get("subscribers")
+    return sub
